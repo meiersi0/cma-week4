@@ -35,13 +35,14 @@ my_age("1997-04-23", "hours")
 #Task1
 #Write your own functions
 
-eucl_dist <- function(wildschwein_BE, units){
-  mutate(dist =sqrt((N-lead(N,1))^2+(E-lead(E,1))^2))
+eucl_dist <- function(dataset, units){
+  mutate(.data=dataset, dist =sqrt((N-lead(N,1))^2+(E-lead(E,1))^2))
 }
+eucl_dist(dataset=wildschwein_BE)
 
-eucl_dist(wildschwein_BE)
 
-
+#Task2
+#Prepare Analysis
 
 
 
